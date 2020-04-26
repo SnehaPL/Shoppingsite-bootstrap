@@ -1,0 +1,120 @@
+body {
+  font-family: sans-serif;
+}
+
+/*Css for Header*/
+.header{
+    background-color:#0446db;
+}
+
+.header-logo{
+    width: 20px;
+}
+
+.search-icon{
+    margin-left: -30px;
+    color: blue;
+}
+
+.header-icons{
+    width: 35px;
+}
+
+/*CSS for Nav Bar*/
+nav{
+     font-size: x-large;
+     background-color:#424649;
+}
+
+/*CSS for banner div*/
+.banner{
+    height: 800px;
+}
+
+.banner-logo{
+    width:50px;
+}
+
+.banner-text{
+    color:#00FFFF;
+}
+
+/*CSS for headings*/
+.shape{
+  width: 25%;
+  text-align: center;
+  background-color:#ffa500;
+  color:white;
+  position:relative;
+}
+
+.shape:after{
+  content:"";
+  width:0px;
+  height:0px;
+  border-top:38px solid #ffa500;
+  border-right:60px solid transparent;
+  position:absolute;
+  left:100%;
+  top:0px;
+}
+
+@media (min-width: 768px) and (max-width:991px){
+.shape{
+  width: 50%;
+  }
+}
+
+@media (max-width: 767px){
+.shape{
+  width: 75%;
+  }
+}
+
+/*CSS for product list*/
+.card{
+    border: none;
+}
+
+.card-img-top{
+    height: 350px;
+    object-fit:covet;
+}
+
+p{
+    margin:0;
+}
+
+/*CSS for rating star*/
+.gold{
+    color:#FFBF00;
+}
+
+.grey{
+    color:#DCDCDC;
+}
+
+/*CSS for latest launch*/
+.latest-launch{
+    height:600px;
+}
+
+.explore-btn{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 8px;
+    font-size: xx-large;
+}
+
+/*CSS for Why Dare*/
+.shipping-img{
+    width: 70%;
+}
+
+/*CSS for Footer*/
+footer{
+    background-color:#000000;
+}
+
+.social-media-img{
+    width:50px;
+}
