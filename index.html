@@ -23,10 +23,13 @@
 <div class="container-fluid header text-white">
     <div class="row">
         <div class="col text-center mt-auto mb-auto">
-            <div><img class="img-fluid header-logo" src="images/logo.png"><h6>Dare</h6></div>
+            <div class="row justify-content-center m-2">
+                <img class="p-2 logo" src="images/logo.png">
+                <h5 class="text-white mt-auto mb-auto font-weight-bold company-name">Dare</h5>
+            </div>
         </div>
-        <div class="col-6 d-flex text-center mt-auto mb-auto">
-            <input type="text" class="form-control shadow p-3" placeholder="Search for products, brands and more">
+        <div class="col-6 d-flex justify-content-center mt-auto mb-auto">
+            <input type="text" class="form-control shadow p-3" placeholder="Search for products, brands and more" style="width:80%">
             <i class="fa fa-search mt-auto mb-auto search-icon"></i>
         </div>
         <div class="col text-center mt-auto mb-auto">
@@ -38,25 +41,32 @@
 </div>
 
 <!--navigation bar-->
-<nav class="navbar text-white justify-content-around">
-    <a>Smart Phones</a>
-    <a>Laptops</a>
-    <a>Tablets</a>
-    <a>Watches</a>
-    <a>Television</a>
-    <a>Accessories</a>
-    <a>Offer Zone</a>
-</nav>
+<div class="container-fluid navigation-bar">
+    <div class="container">
+        <nav class="navbar text-white justify-content-around">
+            <a>Smart Phones</a>
+            <a>Laptops</a>
+            <a>Tablets</a>
+            <a>Watches</a>
+            <a>Television</a>
+            <a>Accessories</a>
+            <a>Offer Zone</a>
+        </nav>
+    </div>
+</div>
+
 
 <!--banner div-->
 <div class="container-fluid">
     <div class="row banner">
         <div class="col" style="background: url(images/watches.jpg) no-repeat center center; background-size: cover;">
             <div class="row justify-content-end m-5">
-                <h1 class="text-white">Dare</h1>
-                <img class="p-1 banner-logo" src="images/logo.png">
+                <div class="text-center">
+                    <img class="img-fluid p-1 logo" src="images/logo.png">
+                    <h1 class="text-white font-weight-bold company-name">Dare</h1>
+                </div>
             </div>
-            <div class="row align-items-end h-75">
+            <div class="row align-items-end banner-text-box">
                 <div class="col text-center text-white">
                     <h1 class="font-weight-normal display-3 banner-text">India's Fastest Watches</h1>
                     <h3 class="font-weight-bold">Extra &#8377 3000 off on Exchange</h3>
@@ -440,7 +450,7 @@
 </div>
 
 <!--Back to top-->
-<nav class="navbar justify-content-center">
+<nav class="navbar justify-content-center navigation-bar">
     <a class="text-white" href="#">Back to Top</a>
 </nav>
 

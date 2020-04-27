@@ -7,8 +7,12 @@ body {
     background-color:#0446db;
 }
 
-.header-logo{
-    width: 20px;
+.logo{
+    width:50px;
+}
+
+.company-name{
+    font-family: Segoe Print;
 }
 
 .search-icon{
@@ -21,9 +25,12 @@ body {
 }
 
 /*CSS for Nav Bar*/
+.navigation-bar{
+     background-color:#424649;
+}
+
 nav{
      font-size: x-large;
-     background-color:#424649;
 }
 
 /*CSS for banner div*/
@@ -31,8 +38,8 @@ nav{
     height: 800px;
 }
 
-.banner-logo{
-    width:50px;
+.banner-text-box{
+    height:65%;
 }
 
 .banner-text{
