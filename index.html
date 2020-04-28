@@ -22,26 +22,70 @@
 <!-- Header-->
 <div class="container-fluid header text-white">
     <div class="row">
-        <div class="col text-center mt-auto mb-auto">
-            <div class="row justify-content-center m-2">
-                <img class="p-2 logo" src="images/logo.png">
-                <h5 class="text-white mt-auto mb-auto font-weight-bold company-name">Dare</h5>
+
+        <div class="col-lg-3 col-7 text-center mt-auto mb-auto">
+            <div id="hamburger-logo" class="row justify-content-center m-2">
+                <div id="hamburger-menu">
+                    <nav class="navbar navbar-expand">
+                        <div class="container">
+
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-bars text-white" aria-hidden="true"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right animate slideIn text-white"
+                                             aria-labelledby="navbarDropdown"
+                                             style="right:auto; font-size: x-large;background-color:#424649;">
+                                            <a class="dropdown-item">Log In</a>
+                                            <a class="dropdown-item">Log Out</a>
+                                            <a class="dropdown-item">Smart Phones</a>
+                                            <a class="dropdown-item">Laptop</a>
+                                            <a class="dropdown-item">Tablets</a>
+                                            <a class="dropdown-item">Watches</a>
+                                            <a class="dropdown-item">Television</a>
+                                            <a class="dropdown-item">Accessories</a>
+                                            <a class="dropdown-item">Offer Zone</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div id="logo">
+                    <img class="p-2 logo" src="images/logo.png">
+                    <h5 class="text-white mt-auto mb-auto font-weight-bold company-name">Dare</h5>
+                </div>
             </div>
         </div>
-        <div class="col-6 d-flex justify-content-center mt-auto mb-auto">
-            <input type="text" class="form-control shadow p-3" placeholder="Search for products, brands and more" style="width:80%">
+
+
+        <div id="search-bar" class="col-lg-6 d-flex justify-content-center mt-auto mb-auto">
+            <input type="text" class="form-control shadow p-2" placeholder="Search for products, brands and more"
+                   style="width:80%">
             <i class="fa fa-search mt-auto mb-auto search-icon"></i>
         </div>
-        <div class="col text-center mt-auto mb-auto">
-            <img class="mx-1 header-icons" src="images/user.png">
+
+
+        <div class="col-lg-3 col-5 text-center mt-auto mb-auto">
+            <button id="search-icon" type="button" class="btn btn-transperant" data-toggle="collapse" data-target="#searchbox"><img class="mx-1 header-icons" src="images/search.png"></button>
+<!--            <img id="search-icon" class="mx-1 header-icons" src="images/search.png">-->
+            <img id="user-icon" class="mx-1 header-icons" src="images/user.png">
             <img class="mx-1 header-icons" src="images/bell.png">
             <img class="mx-1 header-icons" src="images/cart.png">
+        </div>
+        <div id="searchbox" class="collapse p-3 w-100">
+            <input type="text"class="form-control w-50 float-right" placeholder="Search for products, brands and more">
         </div>
     </div>
 </div>
 
 <!--navigation bar-->
-<div class="container-fluid navigation-bar">
+<div class="container-fluid navigation-bar" id="navigation-bar">
     <div class="container">
         <nav class="navbar text-white justify-content-around">
             <a>Smart Phones</a>
@@ -61,7 +105,7 @@
     <div class="row banner">
         <div class="col" style="background: url(images/watches.jpg) no-repeat center center; background-size: cover;">
             <div class="row justify-content-end m-5">
-                <div class="text-center">
+                <div id="banner-logo" class="text-center">
                     <img class="img-fluid p-1 logo" src="images/logo.png">
                     <h1 class="text-white font-weight-bold company-name">Dare</h1>
                 </div>
@@ -86,7 +130,7 @@
         <h2 class="title">Top Offers</h2>
     </div>
     <div class="row">
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Television.jpg">
                 <div class="card-body">
@@ -99,7 +143,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Watch.jpg">
                 <div class="card-body">
@@ -112,7 +156,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Laptop.jpg">
                 <div class="card-body">
@@ -125,7 +169,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Tablets.jpg">
                 <div class="card-body">
@@ -139,62 +183,47 @@
         </div>
     </div>
 
-<!--    Latest Launch Section-->
+    <!--    Latest Launch Section-->
     <div class="shape m-3">
         <h2 class="title">Latest Launch</h2>
     </div>
-    <div class="row m-3 latest-launch">
-        <div class="col-sm-6">
-            <div class="container h-100"
-                 style="background: url(images/mobile.jpg) no-repeat center center; background-size: cover;">
-                <div class="row h-100 text-center">
+
+
+    <div class="container-fluid pl-5 pr-5">
+        <div class="row d-lg-block d-sm-block" style="height:600px">
+            <div class="col-lg-6 col-sm-6 col-6 float-left h-100 p-4 left-div">
+                <div class="row h-100 text-center" style="background: url(images/mobile.jpg) no-repeat center center; background-size: cover;">
                     <div class="col mt-auto mb-auto">
-                        <button class="btn w-25 font-weight-bold text-white explore-btn">
+                        <button class="btn font-weight-bold text-white explore-btn">
                             Explore
                         </button>
                     </div>
                 </div>
             </div>
-
-        </div>
-        <div class="col-sm-6">
-            <div class="row h-50">
-                <div class="col">
-                    <div class="container h-100"
-                         style="background: url(images/skullheadphoneswallpaper.jpg) no-repeat center center; background-size: cover;">
-                        <div class="row h-100 text-center">
-                            <div class="col mt-auto mb-auto">
-                                <button class="btn w-50 font-weight-bold text-white explore-btn">
-                                    Explore
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col h-100">
-                    <div class="container h-100"
-                         style="background: url(images/airpod.jpg) no-repeat center center; background-size: cover;">
-                        <div class="row h-100 text-center">
-                            <div class="col mt-auto mb-auto">
-                                <button class="btn w-50 font-weight-bold text-white explore-btn">
-                                    Explore
-                                </button>
-                            </div>
-                        </div>
+            <div class="col-lg-3 col-sm-6 col-6 float-right h-50 p-4 right-div">
+                <div class="row h-100 text-center" style="background: url(images/skullheadphoneswallpaper.jpg) no-repeat center center; background-size: cover;">
+                    <div class="col mt-auto mb-auto">
+                        <button class="btn font-weight-bold text-white explore-btn">
+                            Explore
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="row h-50 pt-3">
-                <div class="col">
-                    <div class="container h-100"
-                         style="background: url(images/wp4461320-apple-watch-series-wallpapers.jpg) no-repeat center center; background-size: cover;">
-                        <div class="row h-100 text-center">
-                            <div class="col mt-auto mb-auto">
-                                <button class="btn w-25 font-weight-bold text-white explore-btn">
-                                    Explore
-                                </button>
-                            </div>
-                        </div>
+            <div class="col-lg-3 col-6 float-right h-50 p-4 right-div">
+                <div class="row h-100 text-center" style="background: url(images/airpod.jpg) no-repeat center center; background-size: cover;">
+                    <div class="col mt-auto mb-auto">
+                        <button class="btn font-weight-bold text-white explore-btn">
+                            Explore
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-6 float-right h-50 p-4 bottom-div">
+                <div class="row h-100 text-center" style="background: url(images/wp4461320-apple-watch-series-wallpapers.jpg) no-repeat center center; background-size: cover;">
+                    <div class="col mt-auto mb-auto">
+                        <button class="btn font-weight-bold text-white explore-btn">
+                            Explore
+                        </button>
                     </div>
                 </div>
             </div>
@@ -202,12 +231,12 @@
     </div>
 
 
-<!--    hot accessories section-->
+    <!--    hot accessories section-->
     <div class="shape m-3">
         <h2 class="title">Hot Accessories</h2>
     </div>
     <div class="row">
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-4 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Bluetooth_Headset.jpg">
                 <div class="card-body">
@@ -232,7 +261,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-4 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Laptop_Bags.png">
                 <div class="card-body">
@@ -257,7 +286,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-4 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Mobile_Back_cover.jpg">
                 <div class="card-body">
@@ -282,7 +311,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-4 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Wired_Headset.jpg">
                 <div class="card-body">
@@ -307,7 +336,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-4 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Power_Bank.jpg">
                 <div class="card-body">
@@ -332,7 +361,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-4 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Mobile_Charger.jpg">
                 <div class="card-body">
@@ -356,7 +385,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-4 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Magnetic_Bluetooth.jpeg">
                 <div class="card-body">
@@ -381,7 +410,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-4 col-6">
             <div class="card text-center">
                 <img class="card-img-top" src="images/Home_theatre.jpg">
                 <div class="card-body">
@@ -407,13 +436,13 @@
         </div>
     </div>
 
-<!--    Why date section-->
+    <!--    Why date section-->
     <div class="shape m-3">
         <h2 class="title">Why Dare</h2>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-sm-6">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-8">
                 <div class="card text-center">
                     <img class="mx-auto d-block shipping-img" src="images/free-shipping.png">
                     <div class="card-body">
@@ -424,7 +453,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-8">
                 <div class="card text-center">
                     <img class="mx-auto d-block shipping-img" src="images/icons8-replay-10-96.png">
                     <div class="card-body">
@@ -435,7 +464,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-8">
                 <div class="card text-center">
                     <img class="mx-auto d-block shipping-img" src="images/genuine.png">
                     <div class="card-body">
@@ -465,8 +494,8 @@
 
     </div>
     <div class="container my-4">
-        <div class="row justify-content-center text-white">
-            <div class="col">
+        <div class="row text-white">
+            <div class="col-sm-3 col-6 text-center">
                 <h4>About</h4>
                 <ul class="list-unstyled">
                     <li class="py-1">Contact Us</li>
@@ -475,7 +504,7 @@
                     <li class="py-1">Gift a smile</li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col-sm-3 col-6 text-center">
                 <h4>Support</h4>
                 <ul class="list-unstyled">
                     <li class="py-1">Warranty</li>
@@ -484,7 +513,7 @@
                     <li class="py-1">Service Centre</li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col-sm-3 col-6 text-center">
                 <h4>Policy</h4>
                 <ul class="list-unstyled">
                     <li class="py-1">Return Policy</li>
@@ -493,7 +522,7 @@
                     <li class="py-1">Privacy</li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col-sm-3 col-6 text-center">
                 <h4>Help</h4>
                 <ul class="list-unstyled">
                     <li class="py-1">Payments</li>
@@ -505,7 +534,7 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row justify-content-end ">
+        <div id="social-media" class="row justify-content-end ">
             <img class="px-1 social-media-img" src="images/twitter.png">
             <img class="px-1 social-media-img" src="images/facebook.png">
             <img class="px-1 social-media-img" src="images/linkedin.png">
@@ -514,6 +543,10 @@
     </div>
 </footer>
 
+
+<script src="vendor/bootstrap/js/jquery-1.12.1.min.js"></script>
+<script src="vendor/bootstrap/js/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
