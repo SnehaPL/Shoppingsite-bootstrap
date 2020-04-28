@@ -24,6 +24,46 @@ body {
     width: 35px;
 }
 
+@media (max-width:720px){
+    #search-bar{
+        display: none !important;
+    }
+
+    #user-icon{
+        display: none;
+    }
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+@media (max-width: 720px){
+    #hamburger-menu{
+        display: block;
+    }
+
+    #hamburger-logo{
+        justify-content: space-between !important;
+    }
+
+}
+
+#search-icon{
+    display: none;
+}
+
+@media (max-width: 720px){
+#search-icon{
+    display: inline;
+    }
+}
+
+
+.dropdown-item:hover {
+    background-color: blue;
+}
+
 /*CSS for Nav Bar*/
 .navigation-bar{
      background-color:#424649;
@@ -31,6 +71,12 @@ body {
 
 nav{
      font-size: x-large;
+}
+
+@media (max-width: 720px){
+#navigation-bar{
+        display: none;
+    }
 }
 
 /*CSS for banner div*/
@@ -44,6 +90,12 @@ nav{
 
 .banner-text{
     color:#00FFFF;
+}
+
+@media (max-width: 720px){
+#banner-logo{
+    display:none;
+}
 }
 
 /*CSS for headings*/
@@ -112,6 +164,26 @@ p{
     font-size: xx-large;
 }
 
+@media (max-width: 540px){
+.left-div{
+    height: 50% !important;
+}
+}
+
+@media (min-width: 541px) and (max-width:720px){
+.left-div{
+    height: 60% !important;
+}
+
+.right-div{
+    height: 30% !important;
+}
+
+.bottom-div{
+    height: 40% !important;
+}
+}
+
 /*CSS for Why Dare*/
 .shipping-img{
     width: 70%;
@@ -124,4 +196,10 @@ footer{
 
 .social-media-img{
     width:50px;
+}
+
+@media (min-width: 541px) and (max-width:720px){
+#social-media{
+        justify-content: center !important;
+    }
 }
