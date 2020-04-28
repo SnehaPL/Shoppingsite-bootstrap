@@ -24,7 +24,7 @@ body {
     width: 35px;
 }
 
-@media (max-width:720px){
+@media (max-width:992px){
     #search-bar{
         display: none !important;
     }
@@ -38,7 +38,7 @@ body {
     display: none;
 }
 
-@media (max-width: 720px){
+@media (max-width: 992px){
     #hamburger-menu{
         display: block;
     }
@@ -53,7 +53,7 @@ body {
     display: none;
 }
 
-@media (max-width: 720px){
+@media (max-width: 992px){
 #search-icon{
     display: inline;
     }
@@ -73,7 +73,7 @@ nav{
      font-size: x-large;
 }
 
-@media (max-width: 720px){
+@media (max-width: 992px){
 #navigation-bar{
         display: none;
     }
@@ -92,7 +92,7 @@ nav{
     color:#00FFFF;
 }
 
-@media (max-width: 720px){
+@media (max-width: 992px){
 #banner-logo{
     display:none;
 }
@@ -118,15 +118,15 @@ nav{
   top:0px;
 }
 
-@media (min-width: 768px) and (max-width:991px){
+@media (min-width: 768px) and (max-width:992px){
 .shape{
-  width: 50%;
+  width: 30%;
   }
 }
 
 @media (max-width: 767px){
 .shape{
-  width: 80%;
+  width: 50%;
   }
 }
 
@@ -164,13 +164,13 @@ p{
     font-size: xx-large;
 }
 
-@media (max-width: 540px){
+@media (max-width: 767px){
 .left-div{
     height: 50% !important;
 }
 }
 
-@media (min-width: 541px) and (max-width:720px){
+@media (min-width: 768px) and (max-width:992px){
 .left-div{
     height: 60% !important;
 }
@@ -198,7 +198,7 @@ footer{
     width:50px;
 }
 
-@media (min-width: 541px) and (max-width:720px){
+@media (min-width: 768px) and (max-width:992px){
 #social-media{
         justify-content: center !important;
     }
