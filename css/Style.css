@@ -88,6 +88,12 @@ nav{
     height:65%;
 }
 
+@media (max-width: 992px){
+.banner-text-box{
+    height: 80%;
+}
+}
+
 .banner-text{
     color:#00FFFF;
 }
